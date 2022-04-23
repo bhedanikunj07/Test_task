@@ -183,7 +183,7 @@ register_post_type( 'wpcust_Holiday List',
 array(
   'labels' => array(
    'name' => __( 'Holiday List' ),
-   'singular_name' => __( 'Holiday List 1' )
+   'singular_name' => __( 'Holiday List' )
   ),
   'public' => true,
   'has_archive' => false,
