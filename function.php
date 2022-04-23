@@ -176,6 +176,10 @@ require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
 
+<?php
+$title = get_field('page_title');
+echo $title; ?>
+
 /* Custom Post Type Start */
 function create_posttype() {
 register_post_type( 'wpcust_Holiday List',
@@ -194,3 +198,4 @@ array(
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
 /* Custom Post Type End */
+
